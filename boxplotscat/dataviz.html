@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <!-- Load Chart CSS -->
+  <link rel="stylesheet" type="text/css" href="chart.css">
+  <!-- Load d3.js -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <!-- Load Color scale -->
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+  <!-- Create a div where the graph will take place -->
+  <h1> Boxplot with Beeswarm-Stripchart</h1>
+  <div class="chart-wrapper" id="chart"></div>
+
+  <div id="my_dataviz"></div>
+
+  <!-- Create a div options for bin size -->
+  <select id="binSizeOptions">
+      <option value="3">Default (3)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+  </select>
+
+  <script src="makechart_two.js" charset="utf-8"></script>
+  <script src="extract_data.js" charset="utf-8"></script>
+
+</body>
+
+</html>
